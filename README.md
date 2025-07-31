@@ -1,0 +1,1 @@
+# Cloud-Function-for-Transfer-Affiliate-Link
