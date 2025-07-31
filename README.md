@@ -51,3 +51,20 @@ def redirect_http(request):
         return redirect(target_url, code=301)
     else:
         abort(404)
+```
+
+requirements.txt
+```
+functions-framework
+Flask
+```
+
+### วิธี Deploy
+
+1. สร้าง Cloud Function ใน Google Cloud Console
+2. copy code ใน main.py และ requirements.txt ไปวางที่หน้า Edittor code บน Cloud funtion 
+3. กำหนด Entry Point เป็น redirect_http
+4. ตั้งค่า Trigger เป็น HTTP
+5. Deploy ฟังก์ชัน
+
+### ลองเรียกใช้งาน cloud function url + /path ที่คุณสร้างไว้ดู
